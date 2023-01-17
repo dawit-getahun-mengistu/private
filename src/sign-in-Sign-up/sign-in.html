@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign - in</title>
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="../cssjs/sign-in-sign-up.css">
+</head>
+<body>
+    <div class="sign-box">
+        <div class="form-box">
+            <div class="form">
+                <!-- added class name form-head -->
+                <div class="form-head">
+                    <h3>Welcome Back!</h3>
+                    <div>Please enter your details</div>
+                </div>
+                
+                
+                <br>
+                <!-- gave id to form -->
+                <!-- modified names and ids for inputs -->
+                <form id="sign-in-form" onsubmit="validateSignIn()">
+                    <div>
+                        <label for="sign-in-email">Email</label><br>
+                        <input type="email" id="sign-in-email" name="sign-in-email" placeholder="Enter Your Email" required>
+                    </div><br>
+                    <div>
+                        <label for="sign-in-password">Password</label><br>
+                        <input type="password" id="sign-in-password" name="sign-in-password" required><br>
+                        <span id="forgot-password"><u>forgot password?</u></span>
+                    </div>
+                    <br>
+                    <button type="submit">Sign in</button>
+                </form>
+            </div>
+            <div class="with-google">
+                <div><hr></div>
+                <div class="or-txt">Or</div>
+                <button class="google-button">Sign in with Google</button>
+                <div class="sign-up-option">Don't have an account? <a href="sign-up.html"><u>Sign up</u></a></div>
+
+            </div>
+        </div>
+        <div class="logo-box">
+            <a href="home.html">VisitEthiopia</a>
+        </div>
+        
+    </div>
+    <!-- removed audio out of div -->
+    <div class="audio">
+        <audio src="../audio/Ice & Fire - King Canyon.mp3" controls autoplay muted loop>
+        </audio>
+    </div>
+    <script src="../cssjs/index.js"></script>
+</body>
+
+</html>

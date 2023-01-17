@@ -1,0 +1,175 @@
+body{
+    background: url('../imgs/background-imgs/moroccan-flower\ \(1\).png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.head-part{
+    display: flex;
+    justify-content: center;
+
+}
+.pfp{
+    display: flex;
+    flex-direction: column;
+}
+.pfp-img{
+    /* height: 10vh; */
+    width: 8vw;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+.welcome-plus-name{
+    font-size: large;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.profile-info{
+    background-color: white;
+}
+.password-info{
+    background-color:rgb(43, 52, 93);
+    color: white;
+}
+.profile-info,
+.password-info{
+    flex: 1;
+    width: 35vw;
+    height: fit-content;
+    border: 1px solid rgb(43, 52, 93);
+    border-radius: 2px;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+input{
+    width: 10vw;
+}
+/* #change-new-password{
+    width: 13.5vw
+} */
+.profile-form,
+.password-form{
+    padding-top: 2.5vw;
+    padding-left: 5vw;
+    padding-bottom: 0;
+    /* background-color:pink; */
+}
+.profile-form div,
+.password-form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.profile-form div input,
+.password-form div input{
+    margin-left: 3vw;
+}
+label[for="new-password"]{
+    padding-bottom: 2vh;
+}
+.passwordField{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+}
+.passwordField div span{
+    font-size: xx-small;
+}
+.profile-info div{
+    padding: 1vw;
+}
+.password-info:nth-child(2){
+    padding: 1vw;
+    
+}
+
+button{
+
+    color: white;
+    background-color: rgb(43, 52, 93);
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid rgb(43, 52, 93);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 1.2s;
+
+
+}
+button:hover{
+    color: rgb(43, 52, 93);
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(43, 52, 93,0.8);
+}
+.password-form button{
+    color: rgb(43, 52, 93);
+    background-color: white;
+    border: 1px solid rgb(43, 52, 93);
+    transition: 1.2s;
+
+}
+.password-form button:hover{
+    color: white;
+    background-color: rgb(43, 52, 93);
+    border: 1px solid white;
+}
+#welcome-plus-name{
+    color: rgb(43, 52, 93);
+    font-size:xx-large;
+    font-weight: bold;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 5vw;
+}
+.add-pfp{
+    font-size: small;
+    cursor: pointer;
+    color: rgb(43, 52, 93);
+    align-items: center;
+    padding: 4px;
+}
+.page-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#log-out-button{
+    margin-left: 2vw;
+    /* visibility: hidden; */
+}
+
+@media screen and (max-width: 800px){
+    .forms{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-info,
+    .password-info{
+        width: 70vw;
+        
+    }
+    input{
+        width: 25vw;
+    }
+}

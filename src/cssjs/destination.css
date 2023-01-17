@@ -1,0 +1,178 @@
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    
+}
+.place-container{
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color:white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 2px;
+}
+
+.place-slide-imgs{
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+    animation: slideshow 8s infinite;
+    animation-direction: alternate;
+
+}
+.place-img-container img{
+    width: 30vw;
+    height: 20vw;
+
+    
+
+}
+@keyframes slideshow {
+    0%{
+        margin-left: 0%;
+    }
+    33% {
+        margin-left: 0%;
+    }
+    66% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+
+.dest-slider-frame{
+    display: flex;
+    width: 128vw;
+    justify-content: space-around;
+    animation: slider 12s infinite;
+    animation-direction: alternate;
+}
+@keyframes slider {
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 0%;
+    }
+    75% {
+        margin-left: -34%;
+    }
+    100% {
+        margin-left: -34%;
+    }
+
+}
+.hotel-slider{
+    width: 96vw;
+    height: 20vw;
+    overflow: hidden;
+    animation: none;
+}
+.place-label{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(43, 52,93,0.8);
+    top: 0;
+    left: 45%;
+    background-color: rgba(43, 52, 93, 0.2);
+}
+.place-description{
+    padding: 1%;
+}
+.go-to-details-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: rgb(71, 21, 133);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 2px;
+    font-weight: bold;
+    height: 2.5vw;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 1.2s;
+    
+}
+.destination-activities,
+.destination-places{
+    width: 100%;
+    overflow: hidden;
+}   
+@media screen and (max-width: 800px) {
+    .dest-slider-frame{
+        width: 188vw;      
+    }
+    .place-container,
+    .place-img-container img{
+        width: 45vw;
+        height: 45vw;
+    }
+    .place-description{
+        height: 20vw;
+        overflow: hidden;
+    }
+    .go-to-details-button{
+        bottom: 1vw;
+        right: 1vw;
+        z-index: 1;
+        height: 20px;
+    }
+    @keyframes slider {
+        0% {
+            margin-left: 0%;
+        }
+        25% {
+            margin-left: 0%;
+        }
+        75% {
+            margin-left: -50%;
+        }
+        100% {
+            margin-left: -50%;
+        }
+    
+    }
+    .hotel-slider{
+        transition: 1.2s;
+        width: 92vw;
+        height: 66vw;
+        overflow: hidden;
+        animation: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .hotel-container{
+        width: 100%;
+        height: 21vw;
+        transition: 1.2s;
+    }
+    .hotel-slide-imgs{
+        animation: none;
+        transition: 1.2s;
+    }
+    .hotel-img-container a img{
+        width: 33vw;
+        height: 33vw;
+        transition: 1.2s;
+    }
+    
+    
+    
+}
+  

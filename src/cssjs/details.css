@@ -1,0 +1,65 @@
+section{
+    display: flex;
+    flex-direction: column;
+}
+.upper-part,
+.slider-frame,
+.lower-part{
+    display: flex;
+    justify-content: center;
+}
+.video-part,
+.text-part{
+    width: 50%;
+    padding: 2%;
+}
+.video-part{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-part video{
+    width: 96%;
+
+}
+.middle-part{
+    padding: 2%;
+    
+}
+
+.img-container{
+    flex: 1;
+}
+.img-container img{
+    width: 100%;
+    height: 20vw;
+}
+.phone-table,
+.transportation-text{
+    width: 50%;
+    padding: 2%;
+    
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .video-part,
+    .text-part,
+    .phone-table,
+    .transportation-text{
+        width: 100%;
+        padding: 2%;
+    }
+    .upper-part{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lower-part{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

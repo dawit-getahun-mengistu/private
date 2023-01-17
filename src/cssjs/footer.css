@@ -1,0 +1,121 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* background: url(../imgs/background-imgs/cool-background\ \(3\).png); */
+    
+    background-color: #2B345D;
+    color: white;
+}
+.footer-links a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.footer-title{
+    font-size: medium;
+    font-weight: bold;
+    margin-left:0;
+    margin-bottom:2vh;
+    margin-top:2vh;
+    margin-right:2vh;
+}
+.footer-left-block,
+.footer-middle-block,
+.footer-right-block{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    border: none;
+    align-items:flex-start;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.footer-left-block,
+.footer-middle-block{
+    border-right: 2px solid white;
+
+}
+.footer-middle-block{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-right-block{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+}
+.logo a{
+    color: white;
+    background-color: #2B345D;
+    /* width: 50%; */
+    font-size: medium;
+}
+.phone,
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: small;
+    padding-top: 2vh;
+}
+.phone-icon,
+.mail-icon{
+    padding-right: 1vh;
+}
+.fa-phone-flip,
+.fa-envelope-open{
+    color: white;
+    font-size: x-small;
+}
+.mail-address,
+.phone-number{
+    font-size: small;
+}
+@media (max-width: 800px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: 1.2s;   
+    }
+    .footer-middle-block{
+        display: flex;
+        flex-direction: column;
+        transition: 1.2s;
+    }
+    .fa-phone-flip,
+    .fa-envelope-open{
+        color: white;
+        font-size: xx-small;
+        padding-left: 35%;
+    }
+    .phone,
+    .mail{
+        display: flex;
+        justify-content:flex-start;
+
+    }
+    .footer-right-block{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 33vw;
+    }
+    .logo a{
+        font-size: large;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .phone-number,
+    .mail-address{
+        font-size: xx-small;
+    }
+    
+}

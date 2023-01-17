@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="cssjs/header.css">
+    <link rel="stylesheet" href="cssjs/profile.css">
+    <link rel="stylesheet" href="cssjs/footer.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- added a div as a container -->
+    <div class="head-part">
+        <div class="pfp">
+            <img class="pfp-img" src="imgs/default-avi-pfp.png" alt="profile picture">
+            <div class="add-pfp" onclick="unimplementedFeature()"> <u> Add profile picture</u></div>
+        </div>
+        <div class="welcome">
+            <div id="welcome-plus-name">Welcome, !</div>
+            <div>Edit and manage your profile</div>
+        </div>
+    </div>
+    <!-- added a div that contains the 2 forms -->
+    <!-- id name changes -->
+    <div class="forms">
+        <div class="profile-info">
+            <div>My Profile</div>
+            <br>
+            <form class="profile-form" action="">
+                <div>
+                    <label for="change-name">Name* : </label>
+                    <input type="text" id="change-name" name="change-name">
+                </div> <br>
+                <div>
+                    <label for="change-nationality">Nationality : </label>
+                    <input type="text" name="change-nationality" id="change-nationality">
+                </div>
+                 <br>
+                <div>
+                    <label for="change-age">Age* : </label>
+                    <input type="number" name="change-age" id="change-age" min="18">
+                </div>
+                 <br>
+                <div>
+                    <label for="change-email">Email* : </label>
+                    <input type="email" name="change-email" id="change-email" required> 
+                </div>
+                 <br>
+                <div>
+                    <label for="change-phone">Phone : </label>
+                    <input type="tel" name="change-phone" id="change-phone">
+                </div>
+                <br>
+                <br>
+                <button type="submit" onclick="validateUserInfoChange()">Save</button>
+                <button type="reset">Discard</button>
+            </form>
+            <br>
+            
+        </div>
+        <!-- changes to id names -->
+        <div class="password-info">
+              <div>Change Password </div>
+              <br>
+              <form class="password-form" action="">
+                <div>
+                    <label for="change-current-password">Current Password* : </label>
+                    <input type="password" name="change-current-password" id="change-current-password" required>
+                  </div> <br> 
+                  <div>
+                    <label for="change-new-password">New Password* : </label>
+                    <!-- combined them in a new div -->
+                    <div class="passwordField">
+                        <input type="password" name="change-new-password" id="change-new-password" required minlength="8">
+                        <div><span>must be atleast 8 character</span></div>
+                    </div>
+                  </div> <br>
+                  <div>
+                    <label for="change-confirm-password">Confirm Password* : </label>
+                    <input type="password" name="change-confirm-password" id="change-confirm-password" required>
+                  </div>
+                  <br>
+                  <br>
+                  <button type="submit" onclick="validatePasswordChange()">Save</button>
+                  <button type="reset" >Discard</button>
+              </form>  
+        </div>
+    </div>
+
+    <div class="page-button">
+        <form action="home.html">
+            <button class="return-button">Return</button>
+        </form>
+        <!-- added button -->
+        <button id="log-out-button" onclick="logOut()">Log-out</button>
+
+    </div>
+    <script src="cssjs/index.js"></script>
+</body>
+</html>

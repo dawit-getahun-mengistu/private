@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - Aksum</title>
+
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="../cssjs/header.css">
+    <link rel="stylesheet" href="../cssjs/details.css">
+    <link rel="stylesheet" href="../cssjs/footer.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-txt">
+            <!-- changed the img to just text -->
+            <a href="../home.html">VisitEthiopia</a>
+        </div>
+        <div class="header-menu">
+            <div class="to-about"><a href="../about-us.html">About us</a></div>
+            <div class="to-destination"><a href="../destination.html">Destinations</a></div>
+            <div class="to-contact"><a href="../contact-us.html">Contact us</a></div>
+    
+        </div>
+        <div class="avi-pfp">
+            <i class="fa-solid fa-user" onclick="toProfile()"></i>
+                <!-- <img src="imgs/default-avi-pfp.png" alt="default profile picture"> -->
+            
+        </div>
+        <!-- hamburger menu added -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" onclick="dropdownHamburger()"></i>
+
+        </div>
+    </header>
+    <!-- added dropdown class -->
+    <div id="dropdown" class="dropdown show">
+        <i class="fa-solid fa-xmark" onclick="dropdownHamburger()"></i>
+        <div class="to-profile"><a href="../profile.html">profile</a></div>
+        <div class="to-about"><a href="../about-us.html">About us</a></div>
+        <div class="to-destination"><a href="../destination.html">Destinations</a></div>
+        <div class="to-contact"><a href="../contact-us.html">Contact us</a></div>
+    </div>
+    
+    
+    <section>
+        <div class="upper-part">
+            <div class="video-part">
+                <video src="videos/aksum-vid.mp4" controls autoplay muted loop>
+                    <track src="videos/aksum-captions.vtt" srclang="en" label="English">
+                </video>
+            </div>
+            <div class="text-part">
+                <div class="txt-title">
+                    Aksum
+                </div>
+                <p>
+                    Aksum is an ancient city located in northern Ethiopia. 
+                    It was the capital of the Kingdom of Aksum, which flourished between 
+                    the 1st and 7th centuries AD and was a major trading center in the region. 
+                    Aksum is known for its impressive ruins, including the obelisks of Aksum, which are tall, 
+                    carved stone pillars that were erected as monuments. The city is also home to the Church of 
+                    
+                    Our Lady Mary of Zion, which is said to contain the Ark of the Covenant. Aksum is a popular 
+                    tourist destination due to its rich history and cultural significance. 
+                    It was declared a World Heritage site by UNESCO in 1980.
+                </p>
+            </div>
+        </div>
+        <div class="middle-part">
+            <div class="slider-frame">
+                <!-- change class name from place-img-container to img-container -->
+                <div class="img-container">
+                    <img src="../imgs/dest/adwa-img-1.jpg" alt="The mighty Aksum Obelisks">
+                </div>
+                <div class="img-container">
+                    <img src="../imgs/dest/aksum-img-2.jpg" alt="The fallen Aksum obelisk">
+                </div>
+                <div class="img-container">
+                    <img src="../imgs/dest/Aksum-img-3.jpg" alt="The Aksum Stele">
+                </div>
+
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="phone-table">
+                <table>
+                    <th>Important Phone numbers in Ethiopia</th>
+                    <tr>
+                        <td>939</td>
+                        <td>for fire</td>
+                    </tr>
+                    <tr>
+                        <td>907</td>
+                        <td>for ambulance service</td>
+                    </tr>
+                    <tr>
+                        <td>991</td>
+                        <td>for police</td>
+                    </tr>
+                    <tr>
+                        <td>911</td>
+                        <td>for the national emergency number</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="transportation-text">
+                <div class="transportation-title">How To Get To Aksum</div>
+                <p>
+                    To get to Aksum, you can travel by car, bus, or plane. 
+                    The city is located about 740 kilometers north of Addis Ababa and can be reached by driving, taking a bus, 
+                    or flying to the nearest airport in Axum and then taking a taxi or hiring a car. 
+                    It is advisable to plan your trip in advance and book your transportation accordingly.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left-block">
+            <div class="footer-socials">
+                <div class="footer-title">Connect with us</div>
+                <div class="footer-links">
+                    <div><a href="https://twitter.com/DawitGetahunM?t=osvzV9_-9RAmWbd-4aooHA&s=09" target="_blank">Twitter</a></div>
+                    <div><a href="https://www.instagram.com/visit_ethiopia_w/" target="_blank">Insagram</a></div>
+                    <div><a href="https://t.me/visit_ethiopia_with_us" target="_blank">Telegram</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle-block">
+            <div class="footer-company">
+                <div class="footer-title">Company</div>
+                <div class="footer-links">
+                    <div><a href="../contact-us.html">Contact us</a></div>
+                    <div><a href="../about-us.html">About us</a></div>
+                                       
+                </div>
+            </div>
+            <div class="footer-trip">
+                <div class="footer-title">Trip</div>
+                <div class="footer-links">
+                    <div><a href="../destination.html#destination">Destination</a></div>
+                    <div><a href="../destination.html#activities">Activities</a></div>
+                    <div><a href="../destination.html#hotels">Featured hotels</a></div>
+                    
+                </div>
+            </div>
+            <div class="footer-you">
+                <div class="footer-title">You</div>
+                <div class="footer-links">
+                    <div><a href="../profile.html">profile</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-block">
+            <!-- no logo img -->
+            <div class="logo-txt logo">
+                <!-- changed the img to just text -->
+                <a href="../home.html">VisitEthiopia</a>
+            </div>
+            <div class="phone">
+                <div class="phone-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <div class="phone-number">+251-000-000-0000</div>
+            </div>
+            <div class="mail">
+                <div class="mail-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-envelope-open"></i>
+                </div>
+                <div class="mail-address">visit-ethiopia@mail.com</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../cssjs/index.js"></script>
+</body>
+</html>

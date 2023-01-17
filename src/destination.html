@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="cssjs/header.css">
+    <link rel="stylesheet" href="cssjs/destination.css">
+    <link rel="stylesheet" href="cssjs/footer.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-txt">
+            <!-- changed the img to just text -->
+            <a href="home.html">VisitEthiopia</a>
+        </div>
+        <div class="header-menu">
+            <div class="to-about"><a href="about-us.html">About us</a></div>
+            <div class="to-destination"><a href="destination.html">Destinations</a></div>
+            <div class="to-contact"><a href="contact-us.html">Contact us</a></div>
+    
+        </div>
+        <div class="avi-pfp">
+            <i class="fa-solid fa-user" onclick="toProfile()"></i>
+                <!-- <img src="imgs/default-avi-pfp.png" alt="default profile picture"> -->
+            
+        </div>
+        <!-- hamburger menu added -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" onclick="dropdownHamburger()"></i>
+
+        </div>
+    </header>
+    <!-- added dropdown class -->
+    <div id="dropdown" class="dropdown show">
+        <i class="fa-solid fa-xmark" onclick="dropdownHamburger()"></i>
+        <div class="to-profile"><a href="profile.html">profile</a></div>
+        <div class="to-about"><a href="about-us.html">About us</a></div>
+        <div class="to-destination"><a href="destination.html">Destinations</a></div>
+        <div class="to-contact"><a href="contact-us.html">Contact us</a></div>
+    </div>
+    
+    <section>
+        <div class="destination-places" id="destination">
+            <h4>Where Do You Want To Go?</h4>
+            <div class="dest-slider-frame">
+                <div class="place-container">
+                    <div class="place-label">
+                        Laibela
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/lalibela-img-1.jpg" alt="Lalibela, St. George church seen from above">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/lalibela-img-2.jpg" alt="Lalibela, St. George church seen from with in">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/lalibela-img-3.jpg" alt="Hike in Lalibela, girl standing on mountain tops">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Lalibela is a small town in Ethiopia known for its incredible rock-cut churches, which were carved out 
+                        of solid rock in the 12th century and are considered some of the most impressive architectural wonders in the world.
+                    </div>
+                    <form action="details/lalibela.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Aksum
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <!-- img change -->
+                            <img src="imgs/dest/aksum-img-1.jpg" alt="The mighty Aksum Obelisks">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/aksum-img-2.jpg" alt="The fallen Aksum obelisk">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/Aksum-img-3.jpg" alt="The Aksum Stele">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Aksum is a historic city in Ethiopia known for its ancient ruins and cultural significance, 
+                        including the Aksum Obelisk, which is one of the oldest and most important examples of ancient Ethiopian architecture.
+                    </div>
+                    <form action="details/aksum.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Harar
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/harar-img-1.jpg" alt="Harar the walled city">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/harar-img-2.jpg" alt="Amazing art in Harar">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/harar-img-3.jpg" alt="The streets of Harar">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Harar is a city in eastern Ethiopia known for its colorful houses, abundant markets, 
+                        and rich cultural and historical significance as a center of Islam in the Horn of Africa.
+                    </div>
+                    <form action="details/harrar.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Dalol
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/dalol-img-1.jpg" alt="The beautiful salt lakes of Dalol">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/dalol-img-2.jpg" alt="The beautiful salt lakes of Dalol">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/dalol-img-3.jpg" alt="The beautiful salt lakes of Dalol">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Dalol is a small town located in the Afar Region of Ethiopia, known for its 
+                        hot and arid desert climate and the salt mines that are a major economic activity in the area.
+                    </div>
+                    <form action="details/dalol.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="destination-activities" id="activities">
+            <h4>What Do You Want to Celebrate?</h4>
+            <div class="dest-slider-frame">
+                <div class="place-container">
+                    <div class="place-label">
+                        Adwa
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/adwa-img-1.jpg" alt="A traditional drawing of the battle of adwa">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/adwa-img-2.jpg" alt="Adwa fighters dressed in their traditional fighting gear">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/adwa-img-3.jpg" alt="Adwa-Reenactment-of-War-Songs-on-March-1-2013-Photo-by-Ayele-Bekerie-Tadias-1">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Adwa is a small town in Ethiopia known for its historical significance as the site of the Battle of Adwa, 
+                        in which the Ethiopian army successfully defeated an invading Italian force in 1896.
+                    </div>
+                    <form action="details/adwa.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Meskel
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/meskel-img-1.webp" alt="Meskel celebration at Meskel Square">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/meskel-img-2.jpg" alt="Meskel celebration at Meskel Square">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/meskel-img-3.jpg" alt="Meskel celebration at Meskel Square">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Meskel is a Christian holiday in Ethiopia that commemorates the finding of the True Cross by Empress Helena, 
+                        the mother of Emperor Constantine, and is marked by colorful processions, bonfires, and other celebrations
+                    </div>
+                    <form action="details/meskel.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Irrecha
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/irrecha-img-1.jpg" alt="Irrecha celebration in Ethiopia">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/irrecha-img-2.jpg" alt="Irrecha celebration in Ethiopia">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/irrecha-img-3.jpg" alt="Irrecha celebration in Ethiopia">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        Irrecha is a traditional Oromo festival in Ethiopia that involves praying, singing, dancing, and the sharing of food and drink, 
+                        and takes place annually on the second Sunday of October at Hora Arsedi in Bishoftu.
+                    </div>
+                    <form action="details/irrecha.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+                <div class="place-container">
+                    <div class="place-label">
+                        Timket
+                    </div>
+                    <div class="place-slide-imgs">
+                        <div class="place-img-container">
+                            <img src="imgs/dest/timket-img-1.jpg" alt="Timket celebration in Ethiopia">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/timket-img-2.jpg" alt="Timket celebration in Ethiopia">
+                        </div>
+                        <div class="place-img-container">
+                            <img src="imgs/dest/timket-img-3.jpg" alt="Timket celebration in Ethiopia">
+                        </div>
+                    </div>
+                    <div class="place-description">
+                        <!-- shortened the text -->
+                        Timket is a major Ethiopian Orthodox Christian festival that celebrates the Baptism of Jesus with elaborate 
+                        ceremonies, including 
+                        the blessing of holy water and the reenactment of the Baptism, and takes place on January 19th (or 20th).
+                    </div>
+                    <form action="details/timket.html">
+                        <button class="go-to-details-button" type="submit">
+                            Details
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="featured-hotels" id="hotels">
+            <h4>Featured Hotels</h4>
+            <!-- added another class name -->
+            <!-- added multiple additional class names -->
+            <div class="dest-slider-frame hotel-slider">
+                <div class="place-container hotel-container">
+                    <div class="place-label hotel-label">
+                        Hilton
+                    </div>
+                    <div class="place-slide-imgs hotel-slide-imgs">
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.hilton.com/en/hotels/addhitw-hilton-addis-ababa/" target="_blank">
+                                <img src="imgs/hotels/hilton-img-1.webp" alt="hilton hotel Addis Ababa">
+                            </a>
+                            
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.hilton.com/en/hotels/addhitw-hilton-addis-ababa/" target="_blank">
+                                <img src="imgs/hotels/hilton-img-2.webp" alt="hilton hotel Addis Ababa">
+                            </a>
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.hilton.com/en/hotels/addhitw-hilton-addis-ababa/" target="_blank">
+                                <img src="imgs/hotels/hilton-img-3.webp" alt="hilton hotel Addis Ababa">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="place-container hotel-container">
+                    <div class="place-label hotel-label">
+                        Sheraton Addis
+                    </div>
+                    <div class="place-slide-imgs hotel-slide-imgs">
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.marriott.com/en-us/hotels/addlc-sheraton-addis-a-luxury-collection-hotel-addis-ababa/overview/" target="_blank">
+                                <img src="imgs/hotels/sheraton-img-1.webp" alt="Sheraton Addis hotel, Addis Ababa">
+                            </a>
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.marriott.com/en-us/hotels/addlc-sheraton-addis-a-luxury-collection-hotel-addis-ababa/overview/" target="_blank">
+                                <img src="imgs/hotels/sheraton-img-2.webp" alt="Sheraton Addis hotel, Addis Ababa">
+                            </a>
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.marriott.com/en-us/hotels/addlc-sheraton-addis-a-luxury-collection-hotel-addis-ababa/overview/" target="_blank">
+                                <img src="imgs/hotels/sheraton-img-3.webp" alt="Sheraton Addis hotel, Addis Ababa">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="place-container hotel-container">
+                    <div class="place-label hotel-label">
+                        Haile Resorts
+                    </div>
+                    <div class="place-slide-imgs hotel-slide-imgs">
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.haileresorts.com/" target="_blank">
+                                <img src="imgs/hotels/haile-img-1.jpg" alt="Haile Resorts, Ethiopia">
+                            </a>
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.haileresorts.com/" target="_blank">
+                                <img src="imgs/hotels/haile-img-2.jpg" alt="Haile Resorts, Ethiopia">
+                            </a>
+                        </div>
+                        <div class="place-img-container hotel-img-container">
+                            <a href="https://www.haileresorts.com/" target="_blank">
+                                <img src="imgs/hotels/haile-img-3.jpg" alt="Haile Resorts, Ethiopia">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer-left-block">
+            <div class="footer-socials">
+                <div class="footer-title">Connect with us</div>
+                <div class="footer-links">
+                    <div><a href="https://twitter.com/DawitGetahunM?t=osvzV9_-9RAmWbd-4aooHA&s=09" target="_blank">Twitter</a></div>
+                    <div><a href="https://www.instagram.com/visit_ethiopia_w/" target="_blank">Insagram</a></div>
+                    <div><a href="https://t.me/visit_ethiopia_with_us" target="_blank">Telegram</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle-block">
+            <div class="footer-company">
+                <div class="footer-title">Company</div>
+                <div class="footer-links">
+                    <div><a href="contact-us.html">Contact us</a></div>
+                    <div><a href="about-us.html">About us</a></div>
+                                       
+                </div>
+            </div>
+            <div class="footer-trip">
+                <div class="footer-title">Trip</div>
+                <div class="footer-links">
+                    <div><a href="destination.html#destination">Destination</a></div>
+                    <div><a href="destination.html#activities">Activities</a></div>
+                    <div><a href="destination.html#hotels">Featured hotels</a></div>
+                    
+                </div>
+            </div>
+            <div class="footer-you">
+                <div class="footer-title">You</div>
+                <div class="footer-links">
+                    <div><a href="profile.html">profile</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-block">
+            <!-- no logo img -->
+            <div class="logo-txt logo">
+                <!-- changed the img to just text -->
+                <a href="home.html">VisitEthiopia</a>
+            </div>
+            <div class="phone">
+                <div class="phone-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <div class="phone-number">+251-000-000-0000</div>
+            </div>
+            <div class="mail">
+                <div class="mail-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-envelope-open"></i>
+                </div>
+                <div class="mail-address">visit-ethiopia@mail.com</div>
+            </div>
+        </div>
+    </footer>
+    <script src="cssjs/index.js"></script>
+</body>
+</html>

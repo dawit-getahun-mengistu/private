@@ -1,0 +1,170 @@
+
+body{
+    /* position: relative; */
+    font-family: Lato,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url(../moroccan-flower\ \(1\).png); */
+    transition: 2s;
+    background: url(../imgs/background-imgs/moroccan-flower\ \(1\).png);
+}
+section{
+    position: relative;
+    padding: 2vw;
+    
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: black; */
+    font-family: Lato;
+    /* font-weight: bold; */
+    height: 10vh;
+    background-color: #2B345D;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: none;
+    /* border-bottom: 1px solid #471585; */
+    
+    
+}
+.hamburger{
+    color:white;
+    visibility: hidden;
+    display: none;
+}
+.logo-txt a{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: x-large;
+
+}
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.header-menu div{
+    margin-left: 10vw;
+    cursor: pointer;
+    
+}
+.to-about a,
+.to-destination a,
+.to-contact a,
+.to-profile i{
+    color:white;
+    background-color: #2B345D;
+    text-decoration: none;
+}
+.fa-user{
+    color: white;
+    cursor: pointer;
+}
+.avi-pfp{
+    margin-left: 10vw;
+}
+
+.dropdown{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+}
+@media (max-width: 800px) {
+    .header-menu div,
+    .avi-pfp a img{
+        display: none;
+        transition: 0.5s;
+    }
+    .hamburger,
+    .dropdown{
+        visibility: visible;
+    }
+    .hamburger i{
+        
+        display: inline;
+        cursor: pointer;
+        transition: 0.5s;
+        width: 3vw;
+    }
+    .header-menu,
+    .avi-pfp{
+        display: none;
+        transition: 0.5s;
+        
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        background-color: white;
+        
+    }
+    header div{
+        margin: 2vw;
+        transition: 0.5s;
+        
+    }
+    .logo-txt a,
+    .fa-solid{
+        text-decoration: none;
+        color: #2B345D;
+    }
+    .fa-solid{
+        width: 10vw;
+    }
+    .hamburger{
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .dropdown{
+        transition: 2s;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: fit-content;
+        z-index: 150;
+        display: flex;
+        flex-direction: column;
+        background-color: #2B345D;
+        border: none;
+        font-size: medium;
+    }
+    .dropdown div,
+    .dropdown i{
+        padding: 3vw;
+    }
+    
+    .to-profile a,
+    .fa-xmark{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-xmark{
+        padding: 2%;
+        font-size: x-large;
+    }
+    .show{
+        display: none;
+    }
+    .to-about a,
+    .to-destination a,
+    .to-contact a,
+    .to-profile i{
+        color:white;
+        background-color:#2B345D;
+        text-decoration: none;
+    }
+    
+    
+}

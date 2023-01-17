@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="../cssjs/sign-in-sign-up.css">
+    
+</head>
+<body>
+    <div class="sign-box">
+        <div class="form-box">
+            <div class="form">
+                <!-- added class name 'form-head' -->
+                <div class="form-head">
+                    <h3>Get Started!</h3>
+                </div>
+                <!-- gave id for form  and modified names and ids of inputs-->
+                <form id="sign-up-form" >
+                    <!-- added a <br> -->
+                    <br>
+                    <div>
+                        <label for="sign-up-name">Name*</label><br>
+                        <input type="text" name="sign-up-name" id="sign-up-name" required>
+                    </div><br>
+                    <div>
+                        <label for="sign-up-email">Email*</label><br>
+                        <input type="email" id="sign-up-email" name="sign-up-email" placeholder="Enter Your Email" required>
+                    </div><br><br>
+                    <div>
+                        <label for="sign-up-password">Password*</label><br>
+                        <input type="password" id="sign-up-password" name="sign-up-password" minlength="8"><br>
+                        <!-- gave id to the span -->
+                        <span id="password-requirement">must be atleast 8 characters</span>
+                    </div><br>
+                    <!-- gave class name -->
+                    <div class="confirm-div">
+                        <label for="confirm-password">Confirm Password*</label><br>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                        <!-- added new div -->
+                        <div id="password-mismatch"></div>
+                    </div><br>
+                    <!-- added class name -->
+                    <div class="check-box">
+                        <input type="checkbox" name="agree-to-terms" id="agree-to-terms">
+                        <label for="agree-to-terms">Agree to terms of service and privacy</label>
+                    </div><br>
+                    <div id="error-output"></div><br>
+                    
+                    <button onclick="validateSignUp()" type="submit">Sign up</button>
+                </form>
+            </div>
+            <div class="with-google">
+                <div><hr></div>
+                <div class="or-txt">Or</div>
+                <button class="google-button">Sign up with Google</button>
+                <div class="sign-in-option">Already have an account? <a href="sign-in.html"><u>Sign in</u></a></div>
+
+            </div>
+        </div>
+        <div class="logo-box">
+            <a href="home.html">VisitEthiopia</a>
+        </div>
+        
+    </div>
+    <!-- moved out -->
+    <div class="audio">
+        <audio src="../audio/Ice & Fire - King Canyon.mp3" controls autoplay muted loop>
+        </audio>
+    </div>
+    <script src="../cssjs/index.js"></script>
+</body>
+</html>

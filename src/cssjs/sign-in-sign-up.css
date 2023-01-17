@@ -1,0 +1,244 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* background: url(../imgs/background-imgs/cool-background.svg); */
+    font-size: medium; 
+    transition: 2s;   
+}
+.sign-box{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    width: 60vw;
+    /* height: 70vh; */
+    display: flex;
+    border: 1px solid rgb(52, 43, 93);
+    border-radius: 2px;
+    /* min-width: 200px; */
+}
+.form-box,
+.logo-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding: 0;
+    
+
+}
+.logo-box a{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.logo-box{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    background: rgb(52, 43, 93);
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    /* background: url(../imgs/background-imgs/cool-background\ \(3\).png); */
+    background-repeat: no-repeat;
+
+}
+img{
+    width: 40%;
+}
+.form-box{
+    padding-left: 10%;
+    padding-right: 10%;
+    border: none;
+    border-right: 1px solid rgb(52, 43, 93);
+    padding-top: 0;
+    padding-bottom: 5vh;
+    background-color: white;
+    min-width: 250px;
+}
+.form{
+    /* background-color: aqua; */
+    width: 100%;
+}
+.form-head{
+    display: flex;
+    flex-direction: column;
+
+}
+.form-head h3{
+    color: rgb(52, 43, 93);;
+    font-size: x-large;
+    margin: 0;
+    margin-top: 10%;
+}
+.form-head div{
+    margin: 0;
+    font-size: small;
+    
+}
+input{
+    width: 100%;
+    height: 1.5em;
+    border: 1px solid ;
+    /* border-radius: 1px; */
+}
+label{
+    font-size: small;
+    margin-top: 10%;
+}
+#forgot-password{
+    font-size: x-small;
+    display: flex;
+    justify-content:flex-end;
+}
+#password-requirement{
+    font-size: x-small;
+}
+hr {
+    width: 100%;
+    border-top: 1px solid rgb(52, 43, 93);;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+button{
+    color: white;
+    background-color: rgb(52, 43, 93);
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 1.2s;
+    width: 100%;
+
+}
+button:hover{
+    color: rgb(52, 43, 93);
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(71, 21, 133,0.8);
+}
+.google-button{
+    color: rgb(52, 43, 93);
+    background-color: white;
+    font-size: small;
+    border: 1px solid rgb(52, 43, 93);
+    /* width: 100%; */
+}
+.google-button:hover{
+    color: white;
+    background-color:rgb(52, 43, 93);
+}
+.with-google{
+    width: 100%;
+    position: relative;
+    
+}
+.or-txt{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    background-color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: small;
+    
+}
+.sign-up-option,
+.sign-in-option{
+    font-size: small;
+}
+.check-box{
+    position: relative;
+    top: -100%;
+    margin: 0;
+    /* background-color: #471585; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: small;
+    
+}
+.confirm-div{
+    /* background-color: #471585; */
+    margin: 0;
+}
+#confirm-password{
+    margin: 0;
+}
+#agree-to-terms{
+    width: max-content;
+}
+label[for="agree-to-terms"]{
+    position: relative;
+    top: -2vw;
+    font-size: x-small;
+    padding: 2px;
+    /* font-size: 8px; */
+}
+input[type="checkboc"] + label{
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    /* visibility: hidden; */
+    display: none;
+    /* margin: 0.2em; */
+}
+input[type="checkbox"]+label:before{
+    cursor: pointer;
+    content: "\2714";
+    border: 0.1em solid rgb(52, 43, 93);
+    border-radius: 0.2em;
+    display: inline-block; 
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .5s;
+}
+input[type=checkbox]+label:active:before{
+    transform: scale(0.6);
+}
+input[type="checkbox"]:checked+ label:before{
+    cursor: pointer;
+    background-color: rgb(52, 43, 93);
+    border-color:rgb(52, 43, 93);
+    color: white;
+}
+input::placeholder{
+    color: rgb(152, 146, 146);
+    /* font-size: x-small; */
+    font-family: Calibri;
+}
+@media screen and (max-width: 800px) {
+    .sign-box{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .logo-box,
+    .logo-box a{
+        display: none;
+        visibility: hidden;
+    }
+    
+}

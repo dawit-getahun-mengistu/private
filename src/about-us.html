@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- fontawesome kit code -->
+    <script src="https://kit.fontawesome.com/edb6ed9f7f.js" crossorigin="anonymous"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="cssjs/header.css">
+    <link rel="stylesheet" href="cssjs/about-us.css">
+    <link rel="stylesheet" href="cssjs/footer.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-txt">
+            <!-- changed the img to just text -->
+            <a href="home.html">VisitEthiopia</a>
+        </div>
+        <div class="header-menu">
+            <div class="to-about"><a href="about-us.html">About us</a></div>
+            <div class="to-destination"><a href="destination.html">Destinations</a></div>
+            <div class="to-contact"><a href="contact-us.html">Contact us</a></div>
+    
+        </div>
+        <div class="avi-pfp">
+            <i class="fa-solid fa-user" onclick="toProfile()"></i>
+                <!-- <img src="imgs/default-avi-pfp.png" alt="default profile picture"> -->
+            
+        </div>
+        <!-- hamburger menu added -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" onclick="dropdownHamburger()"></i>
+
+        </div>
+    </header>
+    <!-- added dropdown class -->
+    <div id="dropdown" class="dropdown show">
+        <i class="fa-solid fa-xmark" onclick="dropdownHamburger()"></i>
+        <div class="to-profile"><a href="profile.html">profile</a></div>
+        <div class="to-about"><a href="about-us.html">About us</a></div>
+        <div class="to-destination"><a href="destination.html">Destinations</a></div>
+        <div class="to-contact"><a href="contact-us.html">Contact us</a></div>
+    </div>
+
+    <section>
+        <!-- group 2 divs in one -->
+        <div class="wt-we-do">
+            <div class="about-img">
+                <img src="imgs/about-img-1.jpg" alt="Coffee, Ethiopia">
+                <div class="img-description">
+                    Image description: Ethiopia, Coffee. Ethiopian Coffee is among the most 
+                    cherished in the world
+    
+                </div>
+            </div>
+            <div class="about-what-we-do">
+                <div class="title">What We Do</div>
+                <p>
+                    We offer personalized and tailored travel experiences to help clients discover the rich culture and natural beauty of the country. 
+                    Our team of experienced advisers works closely with clients to understand their travel goals and preferences,
+                    and crafts custom itineraries that include booking flights and accommodations, organizing transportation, and arranging activities
+                    and tours. We also offer assistance with obtaining visas, travel insurance, and other necessary documents, and strive to make 
+                    the travel planning process as smooth and stress-free as possible. Whether clients are looking to explore the ancient churches 
+                    and monasteries of the north, experience the vibrant culture of the capital, or go on a wildlife safari, we can help them plan 
+                    the perfect trip to Ethiopia.
+                </p>
+            </div>
+        </div>
+        <div class="history">
+            <!-- switched div order -->
+            <div class="about-our-history">
+                <div class="title">Our History</div>
+                <p>
+                    Our company has been in operation for the past 2 years, during which time we have established ourselves as a leading provider 
+                    of travel services in Ethiopia. Our team of experienced and knowledgeable travel advisers has a deep understanding of the local
+                    culture and customs, as well as the best places to visit and things to do in Ethiopia. We have worked with a wide variety of clients,
+                    ranging from individual travelers to groups, and have helped them plan custom itineraries that allow them to fully experience the 
+                    beauty and culture of the country. In the past 2 years, we have built a reputation for providing excellent service 
+                    and helping our clients create unforgettable travel experiences in Ethiopia. 
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="imgs/anout-img-2.jpg" alt="Amanuel church in Lalibela, Ethiopia">
+                <div class="img-description">
+                    Image description: Amanuel church in Lalibela Ethiopia.
+                    Ethiopia and its long history with religion, ancient architecture and civilization 
+                    still stand before us
+                </div>
+            </div>
+        </div>
+        <div class="goals-aspirations">
+            <div class="about-our-goals">
+                <div class="title">Our Goals</div>
+                <ul>
+                    <li>Be the leading provider of travel services in Ethiopia, offering personalized and tailored itineraries</li>
+                    <li>Provide excellent customer service and support, and offer cultural immersion experiences</li>
+                    <li>Help our clients create unforgettable travel experiences in Ethiopia, and make the travel planning process smooth and stress-free</li>
+                </ul>
+            </div>
+            <!-- spelled class name wrong -->
+            <div class="about-our-aspirations">
+                <div class="title">Our Aspirations</div>
+                <p>
+                    We aspire to become the leading provider of travel services in Ethiopia, known for our personalized and tailored itineraries, 
+                    excellent customer service, and deep knowledge of the local culture and customs. We strive to make the travel planning process 
+                    as smooth and stress-free as possible for our clients, and to provide them with the opportunity to fully immerse themselves in 
+                    the beauty and culture of Ethiopia. Our ultimate goal is to help our clients create unforgettable travel experiences that leave 
+                    a lasting impression. 
+                </p>
+            </div>
+        </div>    
+    </section>
+
+    <footer>
+        <div class="footer-left-block">
+            <div class="footer-socials">
+                <div class="footer-title">Connect with us</div>
+                <div class="footer-links">
+                    <div><a href="https://twitter.com/DawitGetahunM?t=osvzV9_-9RAmWbd-4aooHA&s=09" target="_blank">Twitter</a></div>
+                    <div><a href="https://www.instagram.com/visit_ethiopia_w/" target="_blank">Insagram</a></div>
+                    <div><a href="https://t.me/visit_ethiopia_with_us" target="_blank">Telegram</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle-block">
+            <div class="footer-company">
+                <div class="footer-title">Company</div>
+                <div class="footer-links">
+                    <div><a href="contact-us.html">Contact us</a></div>
+                    <div><a href="about-us.html">About us</a></div>
+                                       
+                </div>
+            </div>
+            <div class="footer-trip">
+                <div class="footer-title">Trip</div>
+                <div class="footer-links">
+                    <div><a href="destination.html#destination">Destination</a></div>
+                    <div><a href="destination.html#activities">Activities</a></div>
+                    <div><a href="destination.html#hotels">Featured hotels</a></div>
+                    
+                </div>
+            </div>
+            <div class="footer-you">
+                <div class="footer-title">You</div>
+                <div class="footer-links">
+                    <div><a href="profile.html">profile</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-block">
+            <!-- no logo img -->
+            <div class="logo-txt logo">
+                <!-- changed the img to just text -->
+                <a href="home.html">VisitEthiopia</a>
+            </div>
+            <div class="phone">
+                <div class="phone-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <div class="phone-number">+251-000-000-0000</div>
+            </div>
+            <div class="mail">
+                <div class="mail-icon">
+                    <!-- changed icon -->
+                    <i class="fa-solid fa-envelope-open"></i>
+                </div>
+                <div class="mail-address">visit-ethiopia@mail.com</div>
+            </div>
+        </div>
+    </footer>
+    <script src="cssjs/index.js"></script>
+</body>
+</html>
